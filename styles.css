@@ -28,7 +28,7 @@ body, html {
     height:100%;
     display:grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1.2fr 4.8fr;
 }
 .sidebar{
     background-color: #1992d4;
@@ -56,14 +56,11 @@ body, html {
     font-weight: bolder;
     font-size: 20px;
 }
-.header{
-    border: 2px solid red;
-}
 .main-content{
     background-color: #e2e8f0;
     display:grid;
     gap:25px;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3.8fr 1.2fr;
     grid-template-rows: 1fr 1fr;
     padding: 25px 25px 50px 15px;
 }
@@ -154,3 +151,42 @@ hr.solid {
     align-self: start;
 }
 
+.header{
+    display:grid;
+    grid-template-rows: 1fr 1.5fr;
+    gap:15px;
+    padding: 0 45px 0 0;
+}
+.headertop{
+    padding: 15px 25px 0 45px;
+    display:grid;
+    grid-template-columns: max-content 5fr 1fr max-content max-content;
+    gap: 20px;
+    align-items: center;
+}
+.headertop>*:nth-child(3){
+    justify-self: end;
+}
+.search{
+    height: 2.2em;
+    border-radius: .9em;
+    background-color: #e2e8f0;
+    border: none;
+}
+.headerbottom{
+    display:grid;
+    grid-template-columns: max-content 1fr max-content max-content max-content;
+    gap: 20px;
+    align-items: center;
+    padding: 0 25px 15px 45px;
+}
+button{
+    font-family: robotoregular;
+    font-weight: bolder;
+    font-size: 1em;
+    background-color: #1992d4;
+    border-radius: 2em;
+    border: none;
+    padding:.7em 2em;
+    color:white;
+}
